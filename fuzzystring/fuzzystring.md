@@ -1,6 +1,6 @@
 # FuzzyString
 
-This week I'd like you to write a FuzzyString class which acts like a string, but does comparisons in a case-insensitive way.
+This week I'd like you to write a `FuzzyString` class which acts like a string, but does comparisons in a case-insensitive way.
 
 For example:
 
@@ -26,7 +26,7 @@ For the first bonus, try to ensure the other comparison operators work as expect
 
 #### Bonus 2
 
-For the second bonus, ensure your FuzzyString class works with string concatenation and the in operator:
+For the second bonus, ensure your `FuzzyString` class works with string concatenation and the `in` operator:
 
     >>> o_word = FuzzyString('Octothorpe')
     >>> 'OCTO' in o_word

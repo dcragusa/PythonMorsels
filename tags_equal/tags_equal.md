@@ -2,7 +2,7 @@
 
 This week's exercise might seem a bit uninteresting at first because it involves working with an HTML-like syntax at a low level. The purpose this week isn't to familiarize yourself with HTML, but to get some practice with string manipulation in Python.
 
-This week I'd like you to write a function that accepts two strings containing opening HTML tags and returns True if they have the same attributes with the same values.
+This week I'd like you to write a function that accepts two strings containing opening HTML tags and returns `True` if they have the same attributes with the same values.
 
 Some examples of basic tag comparisons I'd like you to handle:
 

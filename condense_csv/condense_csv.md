@@ -1,6 +1,6 @@
 # condense_csv
 
-This week I'd like you to write a function, condense_csv, which groups CSV text by the first column.
+This week I'd like you to write a function, `condense_csv`, which groups CSV text by the first column.
 
 The input CSV text will always contain 3 columns: ID, attribute name, attribute value.
 
@@ -18,7 +18,7 @@ Example:
     ball,purple,4,it's round
     cup,purple,1,none
 
-So given a file, songs.txt like this:
+So given a file, `songs.txt` like this:
 
     01,Artist,Otis Taylor
     01,Title,Ran So Hard the Sun Went Down
@@ -47,7 +47,7 @@ For the first bonus, you should handle CSV files that contain data with commas:
 
 #### Bonus 2
 
-For the second bonus, if no id_name argument is specified the condense_csv function should consider the first column as a header and should use the first header as the id_name.
+For the second bonus, if no `id_name` argument is specified the `condense_csv` function should consider the first column as a header and should use the first header as the `id_name`.
 
     >>> text = """\
     ... object,property,value
@@ -64,7 +64,7 @@ For the second bonus, if no id_name argument is specified the condense_csv funct
 
 #### Bonus 3
 
-For the third bonus, your condense_csv function should allow missing properties and out-of-order properties. All property columns should be presented in the order the property was first seen and missing properties should be represented with an empty string.
+For the third bonus, your `condense_csv` function should allow missing properties and out-of-order properties. All property columns should be presented in the order the property was first seen and missing properties should be represented with an empty string.
 
     >>> text = 'A,prop1,x\nA,prop2,y\nB,prop2,z'
     >>> print(condense_csv(text, id_name='Name'))

@@ -1,6 +1,6 @@
 # interleave
 
-For this week's problem, I want you to write a function called interleave which accepts two iterables of any type and return a new iterable with each of the given items "interleaved" (item 0 from iterable 1, then item 0 from iterable 2, then item 1 from iterable 1, and so on).
+For this week's problem, I want you to write a function called `interleave` which accepts two iterables of any type and return a new iterable with each of the given items "interleaved" (item 0 from iterable 1, then item 0 from iterable 2, then item 1 from iterable 1, and so on).
 
 We are making an assumption here that both iterables contain the same number of elements.
 
@@ -14,7 +14,7 @@ Here's an example:
 
 #### Bonus 1
 
-For the first bonus, your interleave function should return an iterator:
+For the first bonus, your `interleave` function should return an iterator:
 
     >>> i = interleave([1, 2, 3, 4], [5, 6, 7, 8])
     >>> next(i)
@@ -24,14 +24,14 @@ For the first bonus, your interleave function should return an iterator:
 
 #### Bonus 2
 
-For second bonus your interleave function should accept any number of arguments:
+For second bonus your `interleave` function should accept any number of arguments:
 
     >>> interleave([1, 2, 3], [4, 5, 6], [7, 8, 9])
     [1, 4, 7, 2, 5, 8, 3, 6, 9]
 
 #### Bonus 3
 
-For the third bonus, your interleave function should work with iterables of different lengths. Short iterables should be skipped over once exhausted:
+For the third bonus, your `interleave` function should work with iterables of different lengths. Short iterables should be skipped over once exhausted:
 
     >>> interleave([1, 2, 3], [4, 5, 6, 7, 8])
     [1, 4, 2, 5, 3, 6, 7, 8]

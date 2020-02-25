@@ -1,6 +1,6 @@
 # format_ranges
 
-This week I'd like you to write a function format_ranges, that takes a list of numbers and returns a string that groups ranges of consecutive numbers together:
+This week I'd like you to write a function `format_ranges`, that takes a list of numbers and returns a string that groups ranges of consecutive numbers together:
 
     >>> format_ranges([1, 2, 3, 4, 5, 6, 7, 8])
     '1-8'

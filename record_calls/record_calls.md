@@ -2,14 +2,14 @@
 
 This week I'd like you to write a decorator function that will record the number of times a function is called.
 
-Your decorator function should be called record_calls and it'll work like this:
+Your decorator function should be called `record_calls` and it'll work like this:
 
     @record_calls
     def greet(name):
         """Greet someone by their name."""
         print(f"Hello {name}")
 
-That record_calls-decorated greet function will now have a call_count attribute that keeps track of the number of times it was called:
+That `record_calls`-decorated greet function will now have a `call_count` attribute that keeps track of the number of times it was called:
 
     >>> greet("Trey")
     Hello Trey
@@ -47,7 +47,7 @@ We should see something like this:
 
 #### Bonus 2
 
-For the second bonus I'd like you to keep track of a "calls" attribute on our function that records the arguments and keyword arguments provided for each call to our function.
+For the second bonus I'd like you to keep track of a `calls` attribute on our function that records the arguments and keyword arguments provided for each call to our function.
 
     >>> greet("Trey")
     Hello Trey
@@ -64,9 +64,9 @@ For the second bonus I'd like you to keep track of a "calls" attribute on our fu
     
 #### Bonus 3
 
-For the third bonus, add a return_value and an exception attribute to each of the objects in our calls list. If the function returned successfully, return_value will contain the return value. Otherwise, exception will contain the exception raised.
+For the third bonus, add a `return_value` and an `exception` attribute to each of the objects in our calls list. If the function returned successfully, `return_value` will contain the return value. Otherwise, `exception` will contain the exception raised.
 
-When an exception is raised a special NO_RETURN value should be returned. Your module should have a NO_RETURN attribute that contains this special value.
+When an exception is raised a special `NO_RETURN` value should be returned. Your module should have a `NO_RETURN` attribute that contains this special value.
 
     >>> @record_calls
     ... def cube(n):

@@ -27,16 +27,16 @@ As a bonus, make sure your function returns an iterator instead of a list.
 
 #### Bonus 2
 
-For a more challenging bonus, make your function works with values of n that are longer than the given iterable by filling the tuple with None values.
+For a more challenging bonus, make your function works with values of n that are longer than the given iterable by filling the tuple with `None` values.
 
     >>> list(window([1, 2, 3], 6))
     [(1, 2, 3, None, None, None)]
 
 #### Bonus 3
 
-If you manage to solve all of that in the time you've scheduled for this exercise, there's one more bonus. Allow a fillvalue keyword argument to be specified to be used instead of None when the window length is longer than the iterable:
+If you manage to solve all of that in the time you've scheduled for this exercise, there's one more bonus. Allow a `fillvalue` keyword argument to be specified to be used instead of `None` when the window length is longer than the iterable:
 
     >>> list(window([1, 2, 3], 5, fillvalue=0))
     [(1, 2, 3, 0, 0)]
 
-Make sure that fillvalue only works as a named argument though. Specifying fillvalue as a positional argument wouldn't be as clear and shouldn't be allowed.
+Make sure that `fillvalue` only works as a named argument though. Specifying `fillvalue` as a positional argument wouldn't be as clear and shouldn't be allowed.

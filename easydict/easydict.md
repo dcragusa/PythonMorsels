@@ -1,6 +1,6 @@
 # EasyDict
 
-This week I'd like you to create a class called EasyDict which creates objects that can use key lookups and attribute lookups interchangeably:
+This week I'd like you to create a class called `EasyDict` which creates objects that can use key lookups and attribute lookups interchangeably:
 
     >>> person = EasyDict({'name': "Trey Hunner", 'location': "San Diego"})
     >>> person.name
@@ -24,7 +24,7 @@ For the first bonus, I'd like you to make sure key and attribute assignment to w
 
 #### Bonus 2
 
-For the second bonus, I'd like you to also allow your EasyDict class to accept keyword arguments, I'd like you to make EasyDict objects comparable to each other via equality, and I'd like you to implement a get method that works sort of like the get method on dictionaries:
+For the second bonus, I'd like you to also allow your `EasyDict` class to accept keyword arguments, I'd like you to make `EasyDict` objects comparable to each other via equality, and I'd like you to implement a `get` method that works sort of like the `get` method on dictionaries:
 
     >>> person = EasyDict(name="Trey Hunner", location="San Diego")
     >>> person.location
@@ -41,7 +41,7 @@ For the second bonus, I'd like you to also allow your EasyDict class to accept k
 
 #### Bonus 3
 
-For the third bonus, I'd like you to allow your EasyDict class to accept a normalize keyword argument which, if true, will "normalize" the spaces in keys to underscores in attributes:
+For the third bonus, I'd like you to allow your `EasyDict` class to accept a `normalize` keyword argument which, if true, will "normalize" the spaces in keys to underscores in attributes:
 
     >>> person = EasyDict(name="Trey Hunner", location="San Diego", normalize=True)
     >>> person['company name'] = "Truthful Technology LLC"

@@ -1,6 +1,6 @@
 # cd
 
-This week I'd like you to make a context manager called cd which changes directories temporarily.
+This week I'd like you to make a context manager called `cd` which changes directories temporarily.
 
 Say we've made a file in a sub directory:
 
@@ -21,7 +21,7 @@ With the cd context manager we can temporarily change directories to read that f
 
 Your context manager should be re-entrant and you should ensure that the current directory is always changed back even if an exception was raised inside the with block.
 
-The directory change shouldn't occur on creation of the cd object but on the use of the with block, so your context manager can be used like this:
+The directory change shouldn't occur on creation of the `cd` object but on the use of the `with` block, so your context manager can be used like this:
 
     >>> change_to_subdirectory = cd(subdir)
     >>> Path('my_file.txt').is_file()
@@ -48,17 +48,18 @@ For the first bonus I'd like you to allow your context manager to accept no argu
 
 #### Bonus 2
 
-For the second bonus, your context manager should work with the with ... as syntax, returning an object that has:
+For the second bonus, your context manager should work with the `with ... as` syntax, returning an object that has:
 
 - a `current` attribute that contains a path-like object representing the directory we've temporarily moved into
 - a `previous` attribute that contains a path-like object representing the directory we were in before we used `cd`
 
-
-    with cd() as dirs:
-        print('previous:', dirs.previous)
-        print('current:', dirs.current)
-    previous: /home/trey
-    current: /tmp/tmpkzia0cyj
+```
+with cd() as dirs:
+    print('previous:', dirs.previous)
+    print('current:', dirs.current)
+previous: /home/trey
+current: /tmp/tmpkzia0cyj
+```
 
 #### Bonus 3
 

@@ -2,7 +2,7 @@
 
 This week I'd like you to write a class representing a 3-dimensional point.
 
-The Point class must accept 3 values on initialization (x, y, and z) and have x, y, and z attributes. It must also have a helpful string representation. Additionally, point objects should be comparable to each other (two points are equal if their coordinates are the same and not equal otherwise).
+The `Point` class must accept 3 values on initialization (`x`, `y`, and `z`) and have `x`, `y`, and `z` attributes. It must also have a helpful string representation. Additionally, point objects should be comparable to each other (two points are equal if their coordinates are the same and not equal otherwise).
 
 Example usage:
 
@@ -20,7 +20,7 @@ Example usage:
 
 #### Bonus 1
 
-For the first bonus, I'd like you to allow Point objects to be added and subtracted from each other.
+For the first bonus, I'd like you to allow `Point` objects to be added and subtracted from each other.
 
     >>> p1 = Point(1, 2, 3)
     >>> p2 = Point(4, 5, 6)
@@ -32,7 +32,7 @@ For the first bonus, I'd like you to allow Point objects to be added and subtrac
 
 #### Bonus 2
 
-For the second bonus, I'd like you to allow Point objects to be scaled up and down by numbers. 
+For the second bonus, I'd like you to allow `Point` objects to be scaled up and down by numbers. 
 
     >>> p1 = Point(1, 2, 3)
     >>> p2 = p1 * 2
@@ -41,7 +41,7 @@ For the second bonus, I'd like you to allow Point objects to be scaled up and do
 
 #### Bonus 3
 
-For the third bonus, I'd like you to allow Point objects to be unpacked using multiple assignment like this:
+For the third bonus, I'd like you to allow `Point` objects to be unpacked using multiple assignment like this:
 
     >>> p1 = Point(1, 2, 3)
     >>> x, y, z = p1

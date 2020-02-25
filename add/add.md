@@ -22,7 +22,7 @@ There are two bonuses this week.
 
 #### Bonus 1
 
-For the first bonus, modify your add function to accept and "add" any number of lists-of-lists.
+For the first bonus, modify your `add` function to accept and "add" any number of lists-of-lists.
 
     >>> matrix1 = [[1, 9], [7, 3]]
     >>> matrix2 = [[5, -4], [3, 3]]
@@ -32,7 +32,7 @@ For the first bonus, modify your add function to accept and "add" any number of 
 
 #### Bonus 2
 
-For the second bonus, make sure your add function raises a ValueError if the given lists-of-lists aren't all the same shape.
+For the second bonus, make sure your `add` function raises a `ValueError` if the given lists-of-lists aren't all the same shape.
 
     >>> add([[1, 9], [7, 3]], [[1, 2], [3]])
     Traceback (most recent call last):

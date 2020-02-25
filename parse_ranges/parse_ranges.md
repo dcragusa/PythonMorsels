@@ -1,7 +1,6 @@
-
 # parse_ranges
 
-This week I'd like you to write a function called parse_ranges, which accepts a string containing ranges of numbers and returns an iterable of those numbers.
+This week I'd like you to write a function called `parse_ranges`, which accepts a string containing ranges of numbers and returns an iterable of those numbers.
 
 The numeric ranges in the string will consist of two numbers separated by hyphens and each of the ranges will be separated by commas and any number of spaces.
 
@@ -37,13 +36,13 @@ For the second bonus, I'd like you to allow individual numbers as well as pairs 
 
 #### Bonus 3
 
-For the third bonus I'd like you to do something a bit odd: handle coverage.py output that's similar to these numeric ranges.
+For the third bonus I'd like you to do something a bit odd: handle `coverage.py` output that's similar to these numeric ranges.
 
-The coverage.py program (used for measuring Python code coverage when testing) produces ranges of numbers similar to the format we're working with. The output from coverage.py sometimes includes ASCII arrows to show that one line jumped to another part of the program.
+The `coverage.py` program (used for measuring Python code coverage when testing) produces ranges of numbers similar to the format we're working with. The output from coverage.py sometimes includes ASCII arrows to show that one line jumped to another part of the program.
 
-For the third bonus I want you to modify your function so that it accepts ranges with a single number followed by an -> and a number or word and ignores the -> and the thing that comes after it.
+For the third bonus I want you to modify your function so that it accepts ranges with a single number followed by an `->` and a number or word and ignores the `->` and the thing that comes after it.
 
-For example we include 20 here, but ignore -> and "exit":
+For example we include 20 here, but ignore `->` and `exit`:
 
     >>> list(parse_ranges('0, 4-8, 20->exit, 43-45'))
     [0, 4, 5, 6, 7, 8, 20, 43, 44, 45]

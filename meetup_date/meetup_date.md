@@ -17,9 +17,9 @@ You can do it with just the datetime module, but this problem can definitely be 
 
 #### Bonus 1
 
-For the first bonus, I'd like you to allow your meetup_date function to accept optional arguments that allow it to be used for other meetups as well.
+For the first bonus, I'd like you to allow your `meetup_date` function to accept optional arguments that allow it to be used for other meetups as well.
 
-The arguments, "nth" and "weekday", will allow callers of your function to specify which weekday their meetup is held on and which occurrence in the month it is held (for example the 2nd Tuesday or the first Friday).
+The arguments, `nth` and `weekday`, will allow callers of your function to specify which weekday their meetup is held on and which occurrence in the month it is held (for example the 2nd Tuesday or the first Friday).
 
     >>> print("SD Python:", meetup_date(2015, 8, nth=4, weekday=3))
     SD Python: 2015-08-27
@@ -28,7 +28,7 @@ The arguments, "nth" and "weekday", will allow callers of your function to speci
     >>> print("SDJS on 1st Tues:", meetup_date(2012, 2, nth=1, weekday=1))
     SDJS on 1st Tues: 2012-02-07
 
-Note that the weekday argument accepts 0 to 6, mirroring the date.weekday method, not the isoweekday method (which is 1 to 7).
+Note that the weekday argument accepts 0 to 6, mirroring the `date.weekday` method, not the `isoweekday` method (which is 1 to 7).
 
 #### Bonus 2
 
@@ -43,7 +43,7 @@ This one is a bit tricky because there are often a couple weekdays with 5 occurr
 
 #### Bonus 3
 
-For the third bonus, I'd like you to create a Weekday object that can be used to more clearly specify days without using magic numbers:
+For the third bonus, I'd like you to create a `Weekday` object that can be used to more clearly specify days without using magic numbers:
 
     >>> print("SDJS", meetup_date(2012, 2, nth=1, weekday=Weekday.TUESDAY))
     SDJS 2012-02-07

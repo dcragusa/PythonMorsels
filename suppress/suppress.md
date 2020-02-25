@@ -2,7 +2,7 @@
 
 This week I'd like you to create a context manager. Context managers use a with block to bookend a block of code with automatic setup and teardown steps.
 
-Your context manager, suppress, should suppress exceptions of a given type:
+Your context manager, `suppress`, should suppress exceptions of a given type:
 
     >>> with suppress(NameError):
     ...     print("Hi!")
@@ -32,7 +32,7 @@ To solve this exercise, you'll want to lookup how to create a context manager in
 
 #### Bonus 1
 
-For the first bonus, I'd like you to make your suppress context manager accept any number of exceptions to suppress:
+For the first bonus, I'd like you to make your `suppress` context manager accept any number of exceptions to suppress:
 
     >>> with suppress(ValueError, TypeError):
     ...     x = int('hello')
@@ -43,7 +43,7 @@ For the first bonus, I'd like you to make your suppress context manager accept a
 
 #### Bonus 2
 
-For the second bonus, I'd like you to allow your context manager to store the exception and traceback information on an object that can be accessed using the with X as Y syntax:
+For the second bonus, I'd like you to allow your context manager to store the exception and traceback information on an object that can be accessed using the `with X as Y` syntax:
 
     >>> with suppress(ValueError, TypeError) as context:
     ...     x = int('hello')
@@ -53,7 +53,7 @@ For the second bonus, I'd like you to allow your context manager to store the ex
     >>> context.traceback
     <traceback object at 0x7fe829bc3bc8>
 
-The exception and traceback attributes should be None when no exception was suppressed.
+The exception and traceback attributes should be `None` when no exception was suppressed.
 
 #### Bonus 3
 

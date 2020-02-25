@@ -1,6 +1,6 @@
 # alias
 
-This week I'd like you to create a callable helper utility, called alias, for making classes with attributes that act as "aliases" to other attributes. The alias callable should work like this:
+This week I'd like you to create a callable helper utility, called `alias`, for making classes with attributes that act as "aliases" to other attributes. The alias callable should work like this:
 
     class DataRecord:
         title = alias('serial')
@@ -22,7 +22,7 @@ Hint: you can solve the main exercise using just the built-in property decorator
 
 #### Bonus 1
 
-For the first bonus, I'd like you to make sure an AttributeError exception is raised when your aliases are assigned to.
+For the first bonus, I'd like you to make sure an `AttributeError` exception is raised when your aliases are assigned to.
 
     >>> record = DataRecord("148X")
     >>> record.title = "149S"
@@ -50,7 +50,7 @@ And writing to the alias should update the value of the attribute being aliased:
 
 For the third bonus, I'd like you to support class-level aliases and not just instance-level aliases.
 
-This class that maintains a _registry attribute and a read-only registry attribute aliasing it:
+This class that maintains a `_registry` attribute and a read-only `registry` attribute aliasing it:
 
     class RegisteredObject:
         _registry = ()
@@ -59,7 +59,7 @@ This class that maintains a _registry attribute and a read-only registry attribu
             RegisteredObject._registry += (self,)
             self.name = name
 
-Accessing the registry attribute at the class level should work properly:
+Accessing the `registry` attribute at the class level should work properly:
 
     >>> object = RegisteredObject("Trey")
     >>> object.name
