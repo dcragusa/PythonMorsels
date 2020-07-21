@@ -5,8 +5,7 @@ class ProxyDict(Mapping):
 
     def __init__(self, *maps):
         self.maps = list(maps)
-        self.mapping = ChainMap()
-        self.mapping.maps = self.maps[::-1]
+        self.mapping = ChainMap(*self.maps[::-1])
 
     def __iter__(self):
         for key in self.mapping:
