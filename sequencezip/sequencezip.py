@@ -23,8 +23,8 @@ class SequenceZip(Sequence):
         return tuple(s[idx] for s in self.len_aware_sequences)
 
     def __eq__(self, other):
-        if not isinstance(self, SequenceZip) or not isinstance(other, SequenceZip):
-            return False
+        if not isinstance(other, SequenceZip):
+            return NotImplemented
         sentinel = object()
         for a, b in zip_longest(self.len_aware_sequences, other.len_aware_sequences, fillvalue=sentinel):
             if a is sentinel or b is sentinel or a != b:
