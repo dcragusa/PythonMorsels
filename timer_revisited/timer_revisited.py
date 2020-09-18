@@ -10,12 +10,13 @@ class Timer(ContextDecorator):
         return cls.named_timers.get(name, super(Timer, cls).__new__(cls))
 
     def __init__(self, name=None):
-        if name:
-            self.__class__.named_timers[name] = self
-        self.runs = []
-        self.running = False
-        self.sub_timers = []
-        self.sub_timer_name_map = {}
+        if not hasattr(self, 'running'):
+            if name:
+                self.__class__.named_timers[name] = self
+            self.runs = []
+            self.running = False
+            self.sub_timers = []
+            self.sub_timer_name_map = {}
 
     @property
     def elapsed(self):
