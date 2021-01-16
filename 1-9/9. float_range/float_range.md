@@ -4,7 +4,7 @@ This week I'd like you to write a callable object called `float_range` that acts
 `range` callable but allows for floating point numbers to be specified.
 
 I say "callable" instead of "function" or "class" because I don't actually care how you implement this thing. 
-What Icare about is that you can call it and loop over the resulting items.
+What I care about is that you can call it and loop over the resulting items.
 
 It should work like this:
 
