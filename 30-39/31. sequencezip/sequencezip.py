@@ -18,8 +18,7 @@ class SequenceZip(Sequence):
 
     def __getitem__(self, idx):
         if isinstance(idx, slice):
-            args = [[seq[i] for i in range(*idx.indices(len(self)))] for seq in self.len_aware_sequences]
-            return SequenceZip(*args)
+            return SequenceZip(*(s[idx] for s in self.len_aware_sequences))
         return tuple(s[idx] for s in self.len_aware_sequences)
 
     def __eq__(self, other):
