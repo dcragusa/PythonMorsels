@@ -49,24 +49,25 @@ The rules for this are that:
 - RomanNumeral objects should be comparable to other RomanNumeral objects 
 - RomanNumeral objects should be comparable to numbers 
 - RomanNumeral objects can be compared using equality/inequality to strings, but cannot be ordered with strings
-
-    >>> fourteen = RomanNumeral('XIV')
-    >>> fourteen2 = RomanNumeral('XIIII')
-    >>> fifteen = RomanNumeral('XV')
-    >>> fourteen == fourteen2
-    True
-    >>> fourteen == fifteen
-    False
-    >>> fourteen < fifteen
-    True
-    >>> fourteen > fifteen
-    False
-    >>> fourteen <= fifteen
-    True
-    >>> fourteen == "XIV"
-    True
-    >>> fourteen < "XIV"
-    >>> RomanNumeral('XIV') < "XIV"
-    Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-    TypeError: '<' not supported between instances of 'RomanNumeral' and 'str'
+```
+>>> fourteen = RomanNumeral('XIV')
+>>> fourteen2 = RomanNumeral('XIIII')
+>>> fifteen = RomanNumeral('XV')
+>>> fourteen == fourteen2
+True
+>>> fourteen == fifteen
+False
+>>> fourteen < fifteen
+True
+>>> fourteen > fifteen
+False
+>>> fourteen <= fifteen
+True
+>>> fourteen == "XIV"
+True
+>>> fourteen < "XIV"
+>>> RomanNumeral('XIV') < "XIV"
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+TypeError: '<' not supported between instances of 'RomanNumeral' and 'str'
+```
